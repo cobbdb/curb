@@ -1,0 +1,35 @@
+{
+  "name": "curb",
+  "version": "1.0.0",
+  "description": "Inline string templating for Node.",
+  "main": "curb.js",
+  "scripts": {
+    "test": "jasmine-node tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cobbdb/curb.git"
+  },
+  "keywords": [
+    "string",
+    "render",
+    "template",
+    "minimal",
+    "inline",
+    "small",
+    "easy",
+    "fast"
+  ],
+  "author": "Dan Cobb <cobbdb@gmail.com> (http://www.github.com/cobbdb)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cobbdb/curb/issues"
+  },
+  "homepage": "https://github.com/cobbdb/curb",
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  },
+  "dependencies": {
+    "lodash.values": "^2.4.1"
+  }
+}
