@@ -1,6 +1,6 @@
 {
   "name": "curb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Inline string templating for Node.",
   "main": "curb.js",
   "scripts": {
@@ -29,7 +29,5 @@
   "devDependencies": {
     "jasmine-node": "^1.14.5"
   },
-  "dependencies": {
-    "lodash.values": "^2.4.1"
-  }
+  "dependencies": {}
 }

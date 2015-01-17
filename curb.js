@@ -1,9 +1,9 @@
-var ld = require('lodash.values');
 module.exports = function () {
-    var args = ld(arguments);
-    var str = args.shift();
-    args.forEach(function (pivot) {
-        str = str.replace(/%s/, pivot);
-    });
+    var i,
+        str = arguments[0],
+        len = arguments.length;
+    for (i = 1; i < len; i += 1) {
+        str = str.replace(/%s/, arguments[i]);
+    }
     return str;
 };

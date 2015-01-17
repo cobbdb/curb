@@ -1,9 +1,16 @@
+var str = require('../curb.js');
+
 describe('curb', function () {
-    var str = require('../curb.js');
     it('supports empty calls', function () {
+        var out;
         expect(function () {
-            str();
+            out = str();
         }).not.toThrow();
+        expect(out).toBeUndefined();
+    });
+    it('supports no args', function () {
+        var out = str('abc%s');
+        expect(out).toEqual('abc%s');
     });
     it('replaces %s one time', function () {
         var res = str('abc%s', 123);
